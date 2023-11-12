@@ -37,6 +37,7 @@ Sample Mutation Queries:
   "platform": ["XBOX","PS2"],
   }
   }
+  
 3. mutation updateGametoDB($id : ID!, $game:updateGameType!) {
   updateGame(id:$id,edit:$game){
     id,
