@@ -1,0 +1,14 @@
+query Authorquery($id:ID!){
+  author(id: $id) {
+    name,
+    reviews {
+         rating,
+    content
+    } 
+  }
+
+Param: 
+{
+  "id": "3",
+
+}
