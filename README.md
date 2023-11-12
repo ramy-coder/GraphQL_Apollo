@@ -9,3 +9,45 @@ Follow the below steps to set up the project in your local machine -
 
 
 Learnt and developed from a course in FCC for GraphQL
+
+Sample Mutation Queries:
+1. mutation DeleteMutation($id : ID!) {
+  deleteGame(id: $id){
+    id,
+    title,
+    platform
+    }
+    }
+  Input :
+  {
+  "id": "2",
+   }
+
+2. mutation addGametoDB($game : gameType! ) {
+  addGame(game: $game){
+    id,
+    title,
+    platform
+    }
+
+  }  
+  Input :
+  {"game" :{
+  "title" : "new game",
+  "platform": ["XBOX","PS2"],
+  }
+  }
+3. mutation updateGametoDB($id : ID!, $game:updateGameType!) {
+  updateGame(id:$id,edit:$game){
+    id,
+  title,
+  platform
+  }
+  }
+  Input:
+  {
+  "id" : "2",
+  "game" :{
+  "title" : "updated"
+  }
+ }
